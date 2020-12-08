@@ -2,13 +2,18 @@
 <html>
   <head>
     <title>Fetsy - Product Detail</title>
+    <link href="./style.css" rel="stylesheet">
   </head>
   <body>
-    <div id="root"></div>
-    <div id="seller"></div>
-    <div id="reviews"></div>
-    <div id="product"></div>
-    <div id="images"></div>
-    <script src="bundle.js"></script>
+    <div id="container-flex">
+      <div id="app" class="flex-item"></div>
+      <div id="root" class="flex-item"></div>
+      <div id="reviews" class="flex-item"></div>
+      <div id="seller" class="flex-item"></div>
+    </div>
+    <script src="http://localhost:3015/sellerBundle"></script>
+    <script src="http://localhost:3015/shoppingBundle"></script>
+    <!-- <script src="http://localhost:3015/imagesBundle"></script> -->
+    <script src="http://localhost:3015/reviewsBundle"></script>
   </body>
 </html>
