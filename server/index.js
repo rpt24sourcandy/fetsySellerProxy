@@ -22,7 +22,7 @@ app.get('/sellerBundle', async (req, res) => {
 })
 
 app.get('/shoppingBundle', async (req, res) => {
-  var response = await axios.get(`http://18.191.206.96:3004/items/1/bundle.js`);
+  var response = await axios.get(`http://18.222.223.190:3004/items/1/bundle.js`);
   // console.log(response.data)
   res.send(response.data)
 })
@@ -48,7 +48,7 @@ app.get('/items/:item_id/seller', async (req, res) => {
 })
 
 app.get('/shopping/items', (req, res) => {
-  axios.get('http://18.191.206.96:3004/shopping/items').then(function (response) {
+  axios.get('http://18.222.223.190:3004/shopping/items').then(function (response) {
     res.send(response.data)
   })
 })
@@ -64,7 +64,7 @@ app.get('/item/images', (req, res) => {
 
 app.get('/shopping/items/:item_id', (req, res) => {
   let item_id = req.params.item_id;
-  axios.get(`http://18.191.206.96:3004/shopping/items/${item_id}`).then(function (response) {
+  axios.get(`http://18.222.223.190:3004/shopping/items/${item_id}`).then(function (response) {
     res.send(response.data)
   })
 })
