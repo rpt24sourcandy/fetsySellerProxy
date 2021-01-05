@@ -3,6 +3,49 @@
   flex-wrap: wrap;
 }
 
-.flex-item {
+/* .flex-item {
   width: 50%;
+} */
+
+#images{
+  width: 40%;
+  padding: 60px;
+}
+
+#space{
+  width: 20%;
+  padding: 60px;
+}
+
+#shopping{
+  width: 40%;
+  padding: 60px;
+}
+
+#reviews{
+  width: 100%;
+  padding: 40px;
+  padding: 60px;
+}
+
+#seller{
+  width: 100%;
+}
+
+#nav{
+  width: 100%;
+}
+
+#warning{
+  width: 100%;
+}
+
+#pre-footer{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+#footer{
+  width: 100%;
 }
