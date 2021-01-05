@@ -23,7 +23,6 @@ app.get('/sellerBundle', async (req, res) => {
 
 app.get('/shoppingBundle', async (req, res) => {
   var response = await axios.get(`http://18.222.223.190:3004/items/1/bundle.js`);
-  // console.log(response.data)
   res.send(response.data)
 })
 
