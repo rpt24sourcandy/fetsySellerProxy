@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }))
 /* ----- FETCH BUNDLES ----- */
 
 app.get('/sellerBundle', async (req, res) => {
-  var response = await axios.get('localhost:3005/bundle.js');
+  var response = await axios.get('http://localhost:3005/bundle.js');
   res.send(response.data)
 })
 
