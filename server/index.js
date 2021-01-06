@@ -5,7 +5,8 @@ const HOST = "localhost";
 const axios = require('axios');
 const path = require('path');
 const cors = require('cors');
-app.use('/items/:item_id', express.static('./client/dist'))
+app.use(express.static('../test.html'))
+// app.use('/items/:item_id', express.static('./client/dist'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
