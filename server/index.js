@@ -17,12 +17,12 @@ app.use(express.urlencoded({ extended: false }))
 /* ----- FETCH BUNDLES ----- */
 
 app.get('/sellerBundle', async (req, res) => {
-  var response = await axios.get('http://3.21.248.149:3005/items/1/bundle.js');
+  var response = await axios.get('localhost:3005/bundle.js');
   res.send(response.data)
 })
 
 app.get('/shoppingBundle', async (req, res) => {
-  var response = await axios.get(`http://18.222.223.190:3004/items/1/bundle.js`);
+  var response = await axios.get('http://18.222.223.190:3004/items/1/bundle.js');
   res.send(response.data)
 })
 
