@@ -8,8 +8,8 @@ const path = require('path');
 // app.get('/', (req, res) => {
 //   res.send('working')
 // })
-app.use(express.static('test'))
-// app.use('/items/:item_id', express.static('./client/dist'))
+// app.use(express.static('test'))
+app.use('/items/:item_id', express.static('./client/dist'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
