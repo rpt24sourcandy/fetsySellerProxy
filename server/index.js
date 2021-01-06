@@ -4,15 +4,14 @@ const PORT = 3015;
 const HOST = "localhost";
 const axios = require('axios');
 const path = require('path');
-const cors = require('cors');
-app.use(express.static('../test.html'))
+// const cors = require('cors');
+// app.get('/', (req, res) => {
+//   res.send('working')
+// })
+app.use(express.static('test'))
 // app.use('/items/:item_id', express.static('./client/dist'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
-
-app.listen(PORT, HOST, () => {
-  console.log(`Starting Proxy at ${HOST}:${PORT}`);
-});
 
 
 /* ----- FETCH BUNDLES ----- */
@@ -89,4 +88,9 @@ app.get('/item/:itemId/images', (req, res) => {
     console.log('reviews', response.data)
     res.send(response.data)
   })
+});
+
+
+app.listen(PORT, () => {
+  console.log(`Starting Proxy at ${PORT}`);
 });
