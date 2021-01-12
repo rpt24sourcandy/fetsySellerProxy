@@ -4,11 +4,9 @@ const PORT = 3015;
 const HOST = "localhost";
 const axios = require('axios');
 const path = require('path');
-// const cors = require('cors');
-// app.get('/', (req, res) => {
-//   res.send('working')
-// })
-// app.use(express.static('test'))
+const compression = require('compression');
+
+app.use(compression());
 app.use('/items/:item_id', express.static('./client/dist'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
